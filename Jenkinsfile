@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        SONARQUBE = credentials('sqa_38ad4959194a870f39f6d6a3d552bb637118c150') // ton token stocké dans Jenkins
+        SONARQUBE = credentials(sqa_38ad4959194a870f39f6d6a3d552bb637118c150) // ton token stocké dans Jenkins
         DOCKER_IMAGE = "myapp:latest"
     }
 
